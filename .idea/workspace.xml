@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4ad68ab-9b8a-4581-97e1-a0869334c9fd" name="Changes" comment="update the paragraph step text">
-      <change afterPath="$PROJECT_DIR$/public/vanilla.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    <list default="true" id="d4ad68ab-9b8a-4581-97e1-a0869334c9fd" name="Changes" comment="make the steps load like a bar as you go through, not bubbling to the next one">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,9 @@
     "accountId": "d25407b5-e18d-44c4-ab06-cc2125389e34"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -69,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734051832171</updated>
-      <workItem from="1734051833536" duration="2163000" />
+      <workItem from="1734051833536" duration="3732000" />
     </task>
     <task id="LOCAL-00001" summary="git commit">
       <option name="closed" value="true" />
@@ -87,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734053783156</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="make the steps load like a bar as you go through, not bubbling to the next one">
+      <option name="closed" value="true" />
+      <created>1734054040172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734054040172</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +105,7 @@
     <MESSAGE value="git commit" />
     <MESSAGE value="adding a bit of reactivity to the static stepper." />
     <MESSAGE value="update the paragraph step text" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the paragraph step text" />
+    <MESSAGE value="make the steps load like a bar as you go through, not bubbling to the next one" />
+    <option name="LAST_COMMIT_MESSAGE" value="make the steps load like a bar as you go through, not bubbling to the next one" />
   </component>
 </project>

@@ -24,16 +24,16 @@ export default function App() {
     return(
       <div className="steps">
           <div className="numbers">
-              <div className={`${step >= 0 ? 'active' : null}`}>1</div>
-              <div className={`${step >= 1 ? 'active' : null}`}>2</div>
-              <div className={`${step >= 2 ? 'active' : null}`}>3</div>
+              <div className={`${step >= 0 ? 'active' : ''}`}>1</div>
+              <div className={`${step >= 1 ? 'active' : ''}`}>2</div>
+              <div className={`${step >= 2 ? 'active' : ''}`}>3</div>
           </div>
 
           <p className="message">Step {step + 1}: {messages[step]}</p>
 
           <div className="buttons">
-              <button onClick={decrementStep} style={{backgroundColor:'#BB2649', color:'#fff'}}>Previous</button>
-              <button onClick={incrementStep} style={{backgroundColor:'#BB2649', color:'#fff'}}>Next</button>
+              <button onClick={decrementStep} className={`${step === 0 ? 'disabled' : 'active'}`}>Previous</button>
+              <button onClick={incrementStep} className={`${step === 2 ? 'disabled': 'active'}`}>Next</button>
           </div>
       </div>
   )

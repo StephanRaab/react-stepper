@@ -70,6 +70,17 @@ body {
   line-height: 1;
 }
 
+.active {
+  background-color: #BB2649;
+  color: #fff;
+}
+
+.buttons button.disabled {
+  cursor: not-allowed;
+  background-color: rgb(240, 240, 240);
+  color: #fff;
+}
+
 h3 {
   margin: 0;
   text-transform: uppercase;
@@ -87,5 +98,5 @@ h3 {
 }
 
 .close:hover {
-  color: #7950f2;
+  color: #BB2649;
 }

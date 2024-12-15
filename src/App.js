@@ -8,6 +8,11 @@ const messages = [
 
 export default function App() {
     const [step, setStep] = useState(0);
+    const [close, setClose] = useState(false);
+
+    function toggleSteps() {
+        setClose(!close);
+    }
 
     function incrementStep() {
         if (step !== 2) {
@@ -22,19 +27,26 @@ export default function App() {
     }
 
     return(
-      <div className="steps">
-          <div className="numbers">
-              <div className={`${step >= 0 ? 'active' : ''}`}>1</div>
-              <div className={`${step >= 1 ? 'active' : ''}`}>2</div>
-              <div className={`${step >= 2 ? 'active' : ''}`}>3</div>
-          </div>
+        <>
+            <p onClick={toggleSteps} className={'close'}>X</p>
+            {!close &&(
+                <div className="steps">
+                    <div className="numbers">
+                        <div className={`${step >= 0 ? 'active' : ''}`}>1</div>
+                        <div className={`${step >= 1 ? 'active' : ''}`}>2</div>
+                        <div className={`${step >= 2 ? 'active' : ''}`}>3</div>
+                    </div>
 
-          <p className="message">Step {step + 1}: {messages[step]}</p>
+                    <p className="message">Step {step + 1}: {messages[step]}</p>
 
-          <div className="buttons">
-              <button onClick={decrementStep} className={`${step === 0 ? 'disabled' : 'active'}`}>Previous</button>
-              <button onClick={incrementStep} className={`${step === 2 ? 'disabled': 'active'}`}>Next</button>
-          </div>
-      </div>
-  )
+                    <div className="buttons">
+                        <button onClick={decrementStep} className={`${step === 0 ? 'disabled' : 'active'}`}>Previous
+                        </button>
+                        <button onClick={incrementStep} className={`${step === 2 ? 'disabled' : 'active'}`}>Next
+                        </button>
+                    </div>
+                </div>
+            )}
+        </>
+    )
 }

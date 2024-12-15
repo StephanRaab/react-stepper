@@ -32,8 +32,8 @@ export default function App() {
           <p className="message">Step {step + 1}: {messages[step]}</p>
 
           <div className="buttons">
-              <button onClick={decrementStep} style={{backgroundColor:'#7950F2', color:'#fff'}}>Previous</button>
-              <button onClick={incrementStep} style={{backgroundColor:'#7950F2', color:'#fff'}}>Next</button>
+              <button onClick={decrementStep} style={{backgroundColor:'#BB2649', color:'#fff'}}>Previous</button>
+              <button onClick={incrementStep} style={{backgroundColor:'#BB2649', color:'#fff'}}>Next</button>
           </div>
       </div>
   )

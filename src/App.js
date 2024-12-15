@@ -28,7 +28,7 @@ export default function App() {
 
     return(
         <>
-            <p onClick={toggleSteps} className={'close'}>X</p>
+            <p onClick={toggleSteps} className={'close'}>{close ? 'show' : 'hide'} steps</p>
             {!close &&(
                 <div className="steps">
                     <div className="numbers">

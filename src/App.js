@@ -10,10 +10,6 @@ export default function App() {
     const [step, setStep] = useState(1);
     const [isClosed, setIsClosed] = useState(false);
 
-    function toggleSteps() {
-        setIsClosed(!isClosed);
-    }
-
     function incrementStep() {
         if (step !== 3) {
             setStep(step + 1);
@@ -28,7 +24,7 @@ export default function App() {
 
     return(
         <>
-            <p onClick={toggleSteps} className='close'>&times;</p>
+            <p onClick={() => setIsClosed(!isClosed)} className='close'>&times;</p>
             {!isClosed && (
                 <div className="steps">
                     <div className="numbers">

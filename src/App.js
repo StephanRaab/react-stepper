@@ -24,7 +24,7 @@ export default function App() {
 
     return(
         <>
-            <button onClick={() => setIsClosed(!isClosed)} className='close'>&times;</button>
+            <button onClick={() => setIsClosed((is) => !is)} className='close'>&times;</button>
             {!isClosed && (
                 <div className="steps">
                     <div className="numbers">

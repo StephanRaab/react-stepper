@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706a4f62-e572-4bbc-a58d-47c0bb9a7d9e" name="Changes" comment="use x for toggling">
+    <list default="true" id="706a4f62-e572-4bbc-a58d-47c0bb9a7d9e" name="Changes" comment="refactor to remove the method">
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734371012977</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor to remove the method">
+      <option name="closed" value="true" />
+      <created>1734371071954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734371071954</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,7 +113,8 @@
     <MESSAGE value="start from first index" />
     <MESSAGE value="remove use of template literal" />
     <MESSAGE value="use x for toggling" />
-    <option name="LAST_COMMIT_MESSAGE" value="use x for toggling" />
+    <MESSAGE value="refactor to remove the method" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor to remove the method" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

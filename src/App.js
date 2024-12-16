@@ -8,10 +8,10 @@ const messages = [
 
 export default function App() {
     const [step, setStep] = useState(1);
-    const [close, setClose] = useState(false);
+    const [isClosed, setIsClosed] = useState(false);
 
     function toggleSteps() {
-        setClose(!close);
+        setIsClosed(!isClosed);
     }
 
     function incrementStep() {
@@ -28,8 +28,8 @@ export default function App() {
 
     return(
         <>
-            <p onClick={toggleSteps} className={'close'}>{close ? 'show' : 'hide'} steps</p>
-            {!close &&(
+            <p onClick={toggleSteps} className='close'>&times;</p>
+            {!isClosed && (
                 <div className="steps">
                     <div className="numbers">
                         <div className={step >= 1 ? 'active' : ''}>1</div>
